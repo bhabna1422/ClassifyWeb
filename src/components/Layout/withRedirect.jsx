@@ -19,16 +19,16 @@ const withRedirect = (WrappedComponent) => {
     // Redirect to "/home" if landing page is 1 and no location data
     useEffect(() => {
       if (isLandingPage === 1 && noLocationData) {
-        router.push("/home");
+        router.push("/");
       }else{
         setShouldRender(true);
       }
     }, [isLandingPage, noLocationData, router]);
 
 
-    if (!shouldRender) {
-      return <Loader />;
-    }
+    // if (!shouldRender) {
+    //   return <Loader />;
+    // }
 
     // Render the wrapped component if no redirection is needed
     return <WrappedComponent {...props} />;
