@@ -343,9 +343,9 @@
 /* Footer Css */
 .main_footer {
   position: relative;
-  background-color: #1a1a1a;
+  background-color: #fff;
   height: fit-content;
-  color: white;
+  color: #000;
 }
 
 .eClassifyApp {
@@ -593,7 +593,7 @@
 }
 
 .footer_links span {
-  color: #fff;
+  color: #000;
   position: relative;
   transition: all 0.5s;
 }
@@ -678,7 +678,7 @@
 
 .contact_details .details_list span {
   opacity: 0.66;
-  color: #fff;
+  color: #000;
   font-size: small;
 }
 
@@ -5980,7 +5980,7 @@ h5 {
 }
 
 .user_profile_card .card-footer .chatBtn {
-  background-color: #000;
+  background-color: #c33046;
   color: #fff !important;
 }
 
