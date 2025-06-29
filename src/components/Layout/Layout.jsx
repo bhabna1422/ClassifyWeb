@@ -92,7 +92,7 @@ const Layout = ({ children }) => {
 
     try {
       const response = await axios.get(
-        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${pos.latitude},${pos.longitude}&key=${placeApiKey}`
+        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${pos.latitude},${pos.longitude}&key=AIzaSyAN-G9ziOvIMwNuo_XCDzjmw-9qc4y0x4U`
       );
       let city = "";
       let state = "";

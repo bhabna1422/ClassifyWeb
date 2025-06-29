@@ -86,7 +86,7 @@ const LocationModal = ({ IsLocationModalOpen, OnHide }) => {
               longitude: position.coords.longitude,
             };
             const response = await axios.get(
-              `https://maps.googleapis.com/maps/api/geocode/json?latlng=${locationData.latitude},${locationData.longitude}&key=${settings?.place_api_key}`
+              `https://maps.googleapis.com/maps/api/geocode/json?latlng=${locationData.latitude},${locationData.longitude}&key=AIzaSyAN-G9ziOvIMwNuo_XCDzjmw-9qc4y0x4U`
             );
 
             if (response.data.error_message) {
@@ -146,7 +146,7 @@ const LocationModal = ({ IsLocationModalOpen, OnHide }) => {
   const getLocationWithMap = async (pos) => {
     try {
       const response = await axios.get(
-        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${pos.lat},${pos.lng}&key=${settings?.place_api_key}`
+        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${pos.lat},${pos.lng}&key=AIzaSyAN-G9ziOvIMwNuo_XCDzjmw-9qc4y0x4U`
       );
       if (response.data.error_message) {
         toast.error(response.data.error_message);
