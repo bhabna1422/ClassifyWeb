@@ -40,7 +40,7 @@ export default async function RootLayout({ children }) {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://js.paystack.co/v1/inline.js"></script>
-        <script async defer src={`https://maps.googleapis.com/maps/api/js?key=${placeApiKey}&libraries=places&loading=async`}></script>
+        <script async defer src={`https://maps.googleapis.com/maps/api/js?key=AIzaSyAN-G9ziOvIMwNuo_XCDzjmw-9qc4y0x4U&libraries=places&loading=async`}></script>
       </Head>
       <body>
         {/* <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxx"

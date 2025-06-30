@@ -641,12 +641,22 @@ export const logout = () => {
 
 
 // Load Google Maps
+// export const loadGoogleMaps = () => {
+//   let settings = store.getState()?.Settings?.data?.data
+//   return useJsApiLoader({
+//     id: 'google-map-script',
+//     googleMapsApiKey: settings?.place_api_key,
+//     libraries: ['geometry', 'drawing', 'places'], // Include 'places' library
+//   });
+// };
+
 export const loadGoogleMaps = () => {
-  let settings = store.getState()?.Settings?.data?.data
+  const hardcodedApiKey = "AIzaSyAN-G9ziOvIMwNuo_XCDzjmw-9qc4y0x4U"; // ✅ Replace with your actual Maps API key
+
   return useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: settings?.place_api_key,
-    libraries: ['geometry', 'drawing', 'places'], // Include 'places' library
+    googleMapsApiKey: hardcodedApiKey,
+    libraries: ['geometry', 'drawing', 'places'],
   });
 };
 
